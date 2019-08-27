@@ -1,0 +1,16 @@
+# FALSAS OPCIONES
+j <- 3
+pe_A <- c('a1', 'a2')
+pe_B <- c('b1', 'b2')
+pe_C <- c('c1', 'c2')
+filas <- length(pe_A) * length(pe_B) * length(pe_C)
+falsasOpciones <- data.frame(matrix(NA, nrow = filas, ncol = j*2), stringsAsFactors=FALSE)
+names(falsasOpciones) <- c('S1', 'S2', 'S3', 'PHI1', 'PHI2', 'PHI3')
+falsasOpciones[1,] <- c('a1', 'b1', 'c1', 1,4,-1 )
+falsasOpciones[2,] <- c('a1', 'b1', 'c2', 5,6,0 )
+falsasOpciones[3,] <- c('a1', 'b2', 'c1', 3,2,0 )
+falsasOpciones[4,] <- c('a1', 'b2', 'c2', 7,6,1 )
+falsasOpciones[5,] <- c('a2', 'b1', 'c1', 2,8,0 )
+falsasOpciones[6,] <- c('a2', 'b1', 'c2', 10,8,2 )
+falsasOpciones[7,] <- c('a2', 'b2', 'c1', 6,4,-2 )
+falsasOpciones[8,] <- c('a2', 'b2', 'c2', 14,8,-1 )

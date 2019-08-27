@@ -1,0 +1,10 @@
+# Perfil en estrategias mixtas sugerido
+pe_j1 <- c('N', 'S')
+pe_j2 <- c('e', 'o')
+filas <- length(pe_j1)+length(pe_j2)
+X_ejemplo5 <- data.frame(matrix(NA, nrow = filas, ncol = 2), stringsAsFactors=FALSE)
+names(X_ejemplo5) <- c('X', 'p')
+X_ejemplo5[1,] <- c('N', 1/8)
+X_ejemplo5[2,] <- c('S', 7/8)
+X_ejemplo5[3,] <- c('e', 3/5)
+X_ejemplo5[4,] <- c('o', 2/5)
